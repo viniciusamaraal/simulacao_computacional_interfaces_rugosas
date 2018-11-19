@@ -10,9 +10,9 @@ namespace projeto_simulacao
 {
     class Program
     {
-        static int tempo = (int)Math.Pow(10, 4);
+        static int tempo = (int)Math.Pow(10, 6);
         static int qtdAmostras = 100;
-        static int[] listaExperimentos = new int[] { 200, 400, 800, 1600 };
+        static int[] listaExperimentos = new int[] { 200, 400 }; // 200, 400, 800, 1600
 
         static int[] vetSubstrato = null;
         static double[] vetAlturaMedia = null;
@@ -45,8 +45,8 @@ namespace projeto_simulacao
                     {
                         for (int k = 0; k < numParticulas; k++)
                         {
-                            vetSubstrato[r.Next(0, tamanhoSubstrato)]++; // Deposição Aleatória
-                            //DepositarParticulaRelaxacao(r.Next(0, tamanhoSubstrato), ref vetSubstrato); // Deposição Aleatória com Relaxação Superficia
+                            //vetSubstrato[r.Next(0, tamanhoSubstrato)]++; // Deposição Aleatória
+                            DepositarParticulaRelaxacao(r.Next(0, tamanhoSubstrato), ref vetSubstrato); // Deposição Aleatória com Relaxação Superficia
                         }
 
                         vetAlturaMedia[j] = (numParticulas * (j + 1)) / tamanhoSubstrato;

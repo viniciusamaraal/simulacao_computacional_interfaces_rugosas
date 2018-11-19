@@ -1,0 +1,8 @@
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\bin\Debug\projeto_simulacao.exe.config
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\bin\Debug\projeto_simulacao.exe
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\bin\Debug\projeto_simulacao.pdb
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\obj\Debug\Interop.MLApp.dll
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\obj\Debug\projeto_simulacao.csproj.ResolveComReference.cache
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\obj\Debug\projeto_simulacao.csproj.CoreCompileInputs.cache
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\obj\Debug\projeto_simulacao.exe
+D:\Onedrive\Documents\_mine\CEFET\Disciplinas\Princípios de Modelagem\Trabalhos\simulacao\projeto_simulacao\projeto_simulacao\obj\Debug\projeto_simulacao.pdb

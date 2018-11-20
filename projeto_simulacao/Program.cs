@@ -8,11 +8,18 @@ using System.Threading.Tasks;
 
 namespace projeto_simulacao
 {
+    public enum Tipo
+    {
+        DA,
+        DARS
+    }
+
     class Program
     {
+        static Tipo TipoSimulacao = Tipo.DA;
         static int tempo = (int)Math.Pow(10, 6);
         static int qtdAmostras = 100;
-        static int[] listaExperimentos = new int[] { 200, 400 }; // 200, 400, 800, 1600
+        static int[] listaExperimentos = new int[] { 800, 1600 }; // 200, 400, 800, 1600
 
         static int[] vetSubstrato = null;
         static double[] vetAlturaMedia = null;
@@ -63,8 +70,8 @@ namespace projeto_simulacao
                 var vetAlturaMediaAmostras = CalcularMediaAmostras(listaAlturasMediasAmostras, tempo);
                 var vetRugosidadeMediaAmostras = CalcularMediaAmostras(listaRugosidadesMediasAmostras, tempo);
 
-                Util.GravarInformacoesArquivo(vetAlturaMedia, $"{ DateTime.Now.ToString("ddMMyyyy_HHmmss") }-ALTURA_MEDIA-TAM_{ tamanhoSubstrato }-TEMPO_MEDIO_{ tempoMedio }s.txt");
-                Util.GravarInformacoesArquivo(vetRugosidadeMediaAmostras, $"{ DateTime.Now.ToString("ddMMyyyy_HHmmss") }-RUGOSIDADE_MEDIA-TAM{ tamanhoSubstrato }-TEMPO_MEDIO_{ tempoMedio }s.txt");
+                Util.GravarInformacoesArquivo(vetAlturaMedia, $"{ TipoSimulacao.ToString() }\\{ DateTime.Now.ToString("ddMMyyyy_HHmmss") }-ALTURA_MEDIA-TAM_{ tamanhoSubstrato }-TEMPO_MEDIO_{ tempoMedio }s.txt");
+                Util.GravarInformacoesArquivo(vetRugosidadeMediaAmostras, $"{ TipoSimulacao.ToString() }\\{ DateTime.Now.ToString("ddMMyyyy_HHmmss") }-RUGOSIDADE_MEDIA-TAM{ tamanhoSubstrato }-TEMPO_MEDIO_{ tempoMedio }s.txt");
             }
         }
 
